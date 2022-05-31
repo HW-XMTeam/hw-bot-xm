@@ -12,7 +12,7 @@ const { exec } = require('child_process')
 const moment = require('moment-timezone')
 const { banner, start, success } = require('./lib/functions')
 const { color } = require('./lib/color')
-const gcrevoke = ["6285714160944-1621430788@g.us"]
+const gcrevoke = ["6285788734756-1621430788@g.us"]
 blocked = []
 
 require('./index.js')
@@ -20,8 +20,8 @@ nocache('./index.js', module => console.log(`${module} is now updated!`))
 
 const starts = async (Haikal = new WAConnection()) => {
     Haikal.logger.level = 'warn'
-    Haikal.version = [2, 2143, 3]
-    Haikal.browserDescription = [ 'HW MODS WA', 'Chrome', '3.0' ]
+	Haikal.version = [2, 2210, 09]
+	Haikal.browserDescription = [ 'HW MODS WA', 'ubuntu', '3.0' ]
     console.log(banner.string)
     Haikal.on('qr', () => {
         console.log(color('[','white'), color('!','red'), color(']','white'), color(' Scan bang'))
